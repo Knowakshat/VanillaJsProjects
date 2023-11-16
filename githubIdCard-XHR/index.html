@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/githubIdCard-XHR/style.css">
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <title>GitHub Id Card</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+    </nav>
+    <div class="wrapper">
+    <form >
+      <input id="user" type="text" name="user" placeholder="Enter your Github username">
+      <button id="btn" for="user">Generate Card</button>
+    </form>
+    <div class="container">
+      
+        <div class="card">
+            <div class="left">
+                <img id="profilePic" src="https://templates.joomla-monster.com/joomla30/jm-news-portal/components/com_djclassifieds/assets/images/default_profile.png" alt="">
+            </div>
+            <div class="right">
+                <h5 id="userName">User Name : <span></span></h5>
+                <h5 id="followers">GitHub Followers : <span></span></h5>
+                <h5 id="githubID"> GitHub ID : </h5>
+            </div>
+        </div>
+    </div>
+  </div>
+    <script src="/githubIdCard-XHR/xhrIdCard.js"></script>
+  </body>
+</html>
