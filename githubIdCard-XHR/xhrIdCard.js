@@ -17,9 +17,9 @@ form.addEventListener('submit', function(e){
         // console.log(xhr.readyState)
         if(xhr.readyState === 4){
             const data = JSON.parse(this.responseText);
-            showUser.textContent += data.login;
-            githubID.textContent += data.id;
-            followers.textContent += data.followers;
+            showUser.textContent = data.login;
+            githubID.textContent = data.id;
+            followers.textContent = data.followers;
             pic.src = data.avatar_url;
             // console.log(data.avatar_url);
         }
